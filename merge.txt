@@ -9,3 +9,4 @@ command fetch test
 merge origin/master
 merge remote/origin/master
 add one line merge remote/origin/master
+test
