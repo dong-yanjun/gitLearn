@@ -1,3 +1,4 @@
 add one line
 change merge.txt
 test git pull
+test pull
