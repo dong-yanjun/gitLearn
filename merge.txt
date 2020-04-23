@@ -5,3 +5,4 @@ test pull
 test fetch
 も一度テスト
 one line add
+command fetch test
