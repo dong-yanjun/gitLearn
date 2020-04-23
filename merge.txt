@@ -7,3 +7,4 @@ test fetch
 one line add
 command fetch test
 merge origin/master
+merge remote/origin/master
