@@ -3,3 +3,4 @@ change merge.txt
 test git pull
 test pull
 test fetch
+も一度テスト
