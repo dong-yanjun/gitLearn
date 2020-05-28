@@ -1,0 +1,75 @@
+Private Sub CommandButton1_Click()
+
+Dim usedRowCount, sum As Integer
+
+Dim SheetA, SheetB As Worksheet
+
+Dim va, va1, va2, va3 As String
+
+Dim go, out, timeLen As String
+sum = 0
+
+Set SheetA = ThisWorkbook.Sheets(1)
+Set SheetB = ThisWorkbook.Sheets(2)
+
+SheetA.Range("C4:E34").Value = ""
+
+usedRowCount = ThisWorkbook.Sheets(2).Range("A10000").End(xlUp).Row
+
+For i = 1 To usedRowCount
+
+va = SheetB.Cells(i, 1)
+
+va3 = SheetB.Cells(i + 1, 1)
+
+If (va = "月" Or va = "火" Or va = "水" Or va = "木" Or va = "金" Or va = "土" Or va = "日") Then
+
+
+
+va1 = SheetA.Cells(i + 3 - sum, 2)
+
+If (va1 = va) Then
+
+If (InStr(va3, ":") > 0) Then
+
+go = SheetB.Cells(i + 1, 1)
+out = SheetB.Cells(i + 1, 2)
+timeLen = SheetB.Cells(i + 2, 1)
+
+SheetA.Cells(i + 3 - sum, 3) = go
+SheetA.Cells(i + 3 - sum, 4) = out
+SheetA.Cells(i + 3 - sum, 5) = timeCheck(timeLen)
+
+End If
+
+End If
+
+
+
+Else
+
+sum = sum + 1
+End If
+Next i
+
+End Sub
+
+
+Function timeCheck(ByVal endTime As String) As String
+
+Dim re As String
+
+
+If (InStr(endTime, ":") > 0) Then
+
+re = endTime
+
+Else
+
+re = ""
+
+End If
+
+timeCheck = re
+
+End Function
