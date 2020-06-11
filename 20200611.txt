@@ -1,1 +1,578 @@
 
+Private Sub CommandButton1_Click()
+
+Dim itemCount As Integer
+Dim start As Integer
+
+Dim addLine As Integer
+
+itemCount = ActiveSheet.Cells.Find("■").Row - 1
+
+addLine = ActiveSheet.Cells.Find("No.").Row
+
+
+For i = 1 To itemCount
+start = i
+For j = 1 To itemCount
+
+If (i = j) Then
+
+Cells(i + addLine, j + 1) = Cells(j, 1) & " ≠ null "
+Cells(i + addLine, j + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(i + addLine, j + 1) = Cells(j, 1) & " ＝ null "
+Cells(i + addLine, j + 1).Font.ColorIndex = 1
+
+End If
+Next j
+Next i
+
+re = selectTwo(addLine + start, itemCount)
+End Sub
+
+'データから二つを選択する
+Function selectTwo(ByVal start As Integer, ByVal itemCount As Integer)
+
+Dim addLine As Integer
+Dim rowNum As Integer
+
+Dim flag As Boolean
+Dim add As Integer
+flag = False
+For i = 1 To itemCount
+If (flag) Then
+add = itemCount - i + 1 + add
+
+End If
+
+For j = 1 To itemCount
+For k = 1 To itemCount
+
+If (j > i) Then
+
+addLine = j - i
+
+rowNum = addLine + start + add
+If (k = i Or k = j) Then
+
+Cells(rowNum, k + 1) = Cells(k, 1) & " ≠ null "
+Cells(rowNum, k + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, k + 1) = Cells(k, 1) & " ＝ null "
+Cells(rowNum, k + 1).Font.ColorIndex = 1
+
+End If
+End If
+Next k
+Next j
+flag = True
+Next i
+
+re = selectThree(add + start, itemCount)
+End Function
+
+'データから三つを選択する
+Function selectThree(ByVal start As Integer, ByVal itemCount As Integer)
+
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+flag = False
+
+For i = 1 To itemCount
+For j = 1 To itemCount
+
+If (j <= i) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - j + 1 + add
+
+End If
+For k = 1 To itemCount
+For l = 1 To itemCount
+
+If (j > i) Then
+If (k > j) Then
+
+addLine = k - j
+
+rowNum = addLine + start + add
+If (l = i Or l = j Or l = k) Then
+
+Cells(rowNum, l + 1) = Cells(l, 1) & " ≠ null "
+Cells(rowNum, l + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, l + 1) = Cells(l, 1) & " ＝ null "
+Cells(rowNum, l + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+End If
+End If
+Next l
+Next k
+Next j
+Next i
+
+re = selectFour(add + start, itemCount)
+End Function
+
+'データから四つを選択する
+Function selectFour(ByVal start As Integer, ByVal itemCount As Integer)
+
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+flag = False
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+If (k <= j) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - k + 1 + add
+
+End If
+For l = 1 To itemCount
+For m = 1 To itemCount
+
+If (j > i And k > j And l > k) Then
+
+addLine = l - k
+
+rowNum = addLine + start + add
+If (m = i Or m = j Or m = k Or m = l) Then
+
+Cells(rowNum, m + 1) = Cells(m, 1) & " ≠ null "
+Cells(rowNum, m + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, m + 1) = Cells(m, 1) & " ＝ null "
+Cells(rowNum, m + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+
+End If
+Next m
+Next l
+Next k
+Next j
+Next i
+
+re = selectFive(add + start, itemCount)
+End Function
+
+'データから5を選択する
+Function selectFive(ByVal start As Integer, ByVal itemCount As Integer)
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+flag = False
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+For l = 1 To itemCount
+If (l <= k) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - l + 1 + add
+
+End If
+For m = 1 To itemCount
+For n = 1 To itemCount
+
+If (j > i And k > j And l > k And m > l) Then
+
+addLine = m - l
+
+rowNum = addLine + start + add
+If (n = i Or n = j Or n = k Or n = l Or n = m) Then
+
+Cells(rowNum, n + 1) = Cells(n, 1) & " ≠ null "
+Cells(rowNum, n + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, n + 1) = Cells(n, 1) & " ＝ null "
+Cells(rowNum, n + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+
+End If
+
+Next n
+Next m
+Next l
+Next k
+Next j
+Next i
+
+re = selectSix(add + start, itemCount)
+
+End Function
+
+'データから6を選択する
+Function selectSix(ByVal start As Integer, ByVal itemCount As Integer)
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+flag = False
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+For l = 1 To itemCount
+For m = 1 To itemCount
+If (m <= l) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - m + 1 + add
+
+End If
+For n = 1 To itemCount
+For o = 1 To itemCount
+
+If (j > i And k > j And l > k And m > l And n > m) Then
+
+addLine = n - m
+
+rowNum = addLine + start + add
+If (o = i Or o = j Or o = k Or o = l Or o = m Or o = n) Then
+
+Cells(rowNum, o + 1) = Cells(o, 1) & " ≠ null "
+Cells(rowNum, o + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, o + 1) = Cells(o, 1) & " ＝ null "
+Cells(rowNum, o + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+
+End If
+
+Next o
+Next n
+Next m
+Next l
+Next k
+Next j
+Next i
+
+re = selectSeven(add + start, itemCount)
+End Function
+
+'データから7を選択する
+Function selectSeven(ByVal start As Integer, ByVal itemCount As Integer)
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+For l = 1 To itemCount
+For m = 1 To itemCount
+For n = 1 To itemCount
+If (n <= m) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - n + 1 + add
+
+End If
+For o = 1 To itemCount
+For p = 1 To itemCount
+
+If (j > i And k > j And l > k And m > l And n > m And o > n) Then
+
+addLine = o - n
+
+rowNum = addLine + start + add
+
+If (p = i Or p = j Or p = k Or p = l Or p = m Or p = n Or p = o) Then
+
+Cells(rowNum, p + 1) = Cells(p, 1) & " ≠ null "
+Cells(rowNum, p + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, p + 1) = Cells(p, 1) & " ＝ null "
+Cells(rowNum, p + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+
+End If
+
+Next p
+Next o
+Next n
+Next m
+Next l
+Next k
+Next j
+Next i
+
+re = selectEight(add + start, itemCount)
+End Function
+
+'データから8を選択する
+Function selectEight(ByVal start As Integer, ByVal itemCount As Integer)
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+For l = 1 To itemCount
+For m = 1 To itemCount
+For n = 1 To itemCount
+For o = 1 To itemCount
+If (o <= n) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - o + 1 + add
+
+End If
+For p = 1 To itemCount
+For q = 1 To itemCount
+
+If (j > i And k > j And l > k And m > l And n > m And o > n And p > o) Then
+
+addLine = p - o
+
+rowNum = addLine + start + add
+
+If (q = i Or q = j Or q = k Or q = l Or q = m Or q = n Or q = o Or q = p) Then
+
+Cells(rowNum, q + 1) = Cells(q, 1) & " ≠ null "
+Cells(rowNum, q + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, q + 1) = Cells(q, 1) & " ＝ null "
+Cells(rowNum, q + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+
+End If
+
+Next q
+Next p
+Next o
+Next n
+Next m
+Next l
+Next k
+Next j
+Next i
+re = selectNine(add + start, itemCount)
+End Function
+
+'データから8を選択する
+Function selectNine(ByVal start As Integer, ByVal itemCount As Integer)
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+For l = 1 To itemCount
+For m = 1 To itemCount
+For n = 1 To itemCount
+For o = 1 To itemCount
+For p = 1 To itemCount
+If (p <= o) Then
+flag = False
+End If
+
+If (flag) Then
+add = itemCount - p + 1 + add
+
+End If
+For q = 1 To itemCount
+For r = 1 To itemCount
+
+If (j > i And k > j And l > k And m > l And n > m And o > n And p > o And q > p) Then
+
+addLine = q - p
+
+rowNum = addLine + start + add
+
+If (r = i Or r = j Or r = k Or r = l Or r = m Or r = n Or r = o Or r = p Or r = q) Then
+
+Cells(rowNum, r + 1) = Cells(r, 1) & " ≠ null "
+Cells(rowNum, r + 1).Font.ColorIndex = 3
+
+Else
+
+Cells(rowNum, r + 1) = Cells(r, 1) & " ＝ null "
+Cells(rowNum, r + 1).Font.ColorIndex = 1
+
+End If
+flag = True
+
+End If
+
+
+Next r
+Next q
+Next p
+Next o
+Next n
+Next m
+Next l
+Next k
+Next j
+Next i
+
+
+End Function
+
+
+'データから8を選択する
+Function selectTen(ByVal start As Integer, ByVal itemCount As Integer)
+Dim addLine As Integer
+Dim flag As Boolean
+Dim add As Integer
+
+For i = 1 To itemCount
+For j = 1 To itemCount
+For k = 1 To itemCount
+For l = 1 To itemCount
+For m = 1 To itemCount
+For n = 1 To itemCount
+For o = 1 To itemCount
+For p = 1 To itemCount
+For q = 1 To itemCount
+For r = 1 To itemCount
+For s = 1 To itemCount
+
+
+Next s
+Next r
+Next q
+Next p
+Next o
+Next n
+Next m
+Next l
+Next k
+Next j
+Next i
+
+End Function
+
+
+'データから8を選択する
+Function selectEleven(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectTwlve(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectTirty(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectFourty(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectFivety(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectsixty(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectseventy(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectEighty(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function selectNineTy(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function select20(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function select21(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
+'データから8を選択する
+Function select22(ByVal start As Integer, ByVal itemCount As Integer)
+
+
+End Function
+
+
