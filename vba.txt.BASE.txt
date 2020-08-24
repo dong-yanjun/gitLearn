@@ -1,0 +1,47 @@
+Private Sub CommandButton1_Click()
+Dim start As Integer
+
+Dim sum As Integer
+
+Dim lastNum As Integer
+
+start = ActiveSheet.Cells.Find("-").Row - 1
+
+For i = 1 To start
+
+lastNum = start - i
+
+For j = 1 To start
+
+If i = j Then
+
+Cells(i + 9, j + 1) = Cells(j, 1) & " <> null "
+
+Else
+
+Cells(i + 9, j + 1) = Cells(j, 1) & " = null "
+
+End If
+
+For k = 1 To start
+
+If (j > i) Then
+
+sum = j - i
+
+If (k = i Or k = j) Then
+
+Cells(sum + 15, k + 1) = Cells(k, 1) & " <> null "
+
+Else
+
+Cells(sum + 15, k + 1) = Cells(k, 1) & " = null "
+
+End If
+End If
+Next k
+Next j
+Next i
+
+
+End Sub

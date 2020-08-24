@@ -1,0 +1,5 @@
+Private Sub CommandButton1_Click()
+Dim start As Integer
+
+Dim sum As Integer
+
