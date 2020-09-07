@@ -1,0 +1,712 @@
+80. A customer is currently running SAP ERP and wants to transition to a new implementation of SAP S/4HANA. Yea are required to provide them with a solution that enable them transition to SAP 5/4 HANA Customer specific enhancements. Which of the following tools will help leverage the transition process?
+There are 1 correct answer to this question.
+A. Software Update Manager
+B. SAP Readiness check for sap S/4 HANA
+C. SAP Transformation navigator
+D. SAP S/4HANA migration cockpit
+(Answer:C)
+81. Your customer is implementing a new installation of SAP S/4HANA. Which of the following technical components must be installed?
+There are 1 correct answer to this question.
+A. SAP Business Planning and Consolidation for SAP S/4HANA
+B. SAP Fiori for SAP S/4HANA
+C. SAP S/4HANA, embedded Business Warehouse
+D. SAP NetWeaver Application Server
+(Answer: D)
+82. Your customer wants to maintain the current customer and supplier account numbers even after migration to business partners. The customer also wants to ensure the account numbers continue to be aligned after the conversion.
+What settings must be made to ensure this? There are 1 correct answer to this question.
+A. Use internal number ranges in the BP groupings for the conversion and switch to external afterward.
+B. Use external number ranges in the customer and supplier account groups for the conversion and switch to internal afterward.
+C. Use internal number ranges in the customer and supplier account groups for the conversion and switch to external afterward.
+D. Use external number ranges in the BP groupings for the conversion and switch to internal afterward.
+(Answer: B)
+
+
+83. Which objects do you migrate from SAP ERP to SAP S/4HANA? There are 3 correct answer to this question.
+A. Data of costing-based profitability analysis
+B. Master data such as assets and profit centers.
+C. Accounting documents of financial accounting and controlling
+D. House banks for new Bank Account Management.
+E. Balances of accounts, customers, and vendors.
+(Answer:C,D, E)
+84. Your customer uses SAP ERP on any database with EHP 8, classic GIL with accounts
+approach, and more than 10 yearsÅf worth of data. What can you do in separate projects before the SAP S/4HANA conversion to reduce the complexity of your conversion
+project?
+There are 2 correct answer to this question.
+A. Launch customer-vendor integration for the business partner.
+B. Adopt new Asset Accounting.
+C. Implement an archiving project.
+D. Create a backup.
+(Answer:C, D)
+85. You need to create a new user-defined characteristic in account based CO-PA and must ensure that is part of the universal journal entry.
+Which actions do you have to perform?
+There are 2 correct answer to this question.
+A. Activate the CO-PA append structure in ACDOCA.
+B. Create the user-defined characteristic and add it to the operating concern.
+C. Maintain the proper derivation rules in transaction KEDR.
+D. Generate the operating concern.
+(Answer:B,D)
+86. Which of the following roles are delivered as business partner roles? There are 3 correct answer to this question.
+A. Bank accounts
+B. Banks
+C. Suppliers
+D. Employees
+E. Distribution channels
+(Answer:B,C,D)
+
+
+87. What are the data sources for cash management in SAP S/4HANA? There are 3 correct answer to this question.
+A. Memo records
+B. Consolidation records
+C. Price records
+D. Purchase order records
+E. Sales order records
+(Answer:A, D,E)
+88. A document can have up to 999999 line items in the universal journal (reporting or GIL view). How does this affect the entry view (table BSEG)?
+There are 1 correct answer to this question.
+A. The entry view is also based on the universal journal.
+B. The system splits the single entry into multiple documents as required.
+C. It is extended to 999999 line items
+D. It is limited to 999 line items.
+(Answer: D)
+89. What credit management organizational element is required for calculating the credit limit, and enables you to carry out detailed checks at business
+There are 1 correct answer to this question.
+A. Sales area
+B. Credit control area
+C. Credit segment
+D. Company code
+(Answer: B)
+90. What are the earliest point in time that the attributed profitability segments can be derived?
+There are 1 correct answer to this question.
+A. When you run the realignment in profitability analysis
+B. When you settle the cost to profitability analysis
+C. When you run the results analysis for cost objects
+D. When you post the primary cost document
+(Answer: D)
+
+
+91. What SAP S/4HANA deployment option will cause the least business disruption for the average SAP end user?
+There are 1 correct answer to this question.
+A. On premise
+B. Cloud single-tenant
+C. Central finance
+D. Cloud multi-tenant
+(Answer:A)
+92. You notice alpha-numeric document numbers in the Universal journal that do not have a separate document header stored in the BKPF table.
+Which activities may lead to alpha-numeric document numbers? There are 2 correct answer to this question.
+A. Cross company code postings
+B. Balance carry forward
+C. Settlement of investment orders
+D. Corrections due to migration
+(Answer:A,C)
+93. What is the maximum number of currencies that can be defined in a ledger configuration?
+There are 1 correct answer to this question.
+A.2
+B. 5
+C. 8
+D. 10
+(Answer: D)
+94. What SAP Fiori app should be used to leverage the machine learning service for goods and invoice receipt reconciliation?
+A. Confirm Receipt of Goods
+B. Post Goods Receipt for inbound Delivery
+C. Reconcile GR/IR Accounts
+D. Business Reconciliation Report
+(Answer:C)
+
+
+95. What processes do you perform as part of liquidity management? There are 3 correct answer to this question.
+A. Review credit standing
+B. Post credit memos
+C. Monitor cash flow
+D. Forecast balances
+E. Perform planning
+(Answer:C,D, E)
+96. What is posted at the same time to both account-based and costing-based profitability analysis?
+There are 2 correct answer to this question.
+A. Standard cost of goods sold
+B. Actual revenue
+C. Actual cost of goods sold
+D. Incoming sales orders
+(Answer: B,C)
+97. In what system is it important to perform all system conversion steps to identify and solve conversion errors?
+There are 1 correct answer to this question.
+A. Sandbox
+B. Productive
+C. Development
+D. Quality Assurance
+(Answer:D)
+98. In controlling. What is a mandatory customizing step when converting a system to SAP
+S/4HANA?
+There are 1 correct answer to this question.
+A. Define profit center hierarchy.
+B. Migrate the material ledger.
+C. Activate Account-based CO-PA.
+D. Create document type for CO postings.
+(Answer:C)
+
+
+
+99. At which level do you define that a GIL account is a secondary cost account? There are 2 correct answer to this question.
+A. Chart of accounts
+B. Operating concern
+C. Company code
+D. Controlling area
+(Answer:A)
+100. Which technologies help you decrease data volume in the SAP HANA database? There are 2 correct answer to this question.
+A. Archiving
+B. Indexing
+C. Mirroring
+D. Aging
+(Answer:A, D)
+101. You have integrated SAP Cash Application on the SAP Cloud Platform with your SAP S/4HANA system. Which process does SAP Cash Application help you with? There are 1 correct answer to this question.
+A. Cash flow reporting
+B. Monitoring bank risk
+C. Cash journal logging
+D. Bank statement processing
+(Answer: D)
+I,
+102. How does the Near-Zero Downtime method minimize the downtime of the productive SAP system during migration?
+There are 1 correct answer to this question.
+A. The data from previous years is archived.
+B. SQL database commands are used to accelerate the migration
+C. A clone of the productive system is used.
+D. Optimized data compression is used to minimize the data volume.
+(Answer:C)
+
+
+103. Where do you assign the customer and vendor account groups when preparing for integration with the business partner (BP)?
+There are 2 correct answer to this question.
+A. BP grouping
+B. BProlegroup
+C. BProIe
+D. BPcategory
+(Answer:A,C)
+104. There are 8 customer-specitic charts of depreciation in the client that area assigned to 22 active company codes, as required Additionally, there are 7 reference and unused.
+How many you charts of depreciation do you migrate? There are 1 correct answer to this question.
+A.7
+B. 8
+C. 15
+D. 22
+(Answer: B)
+105. What are the features of the multi-valuation ledger for parallel valuation methods in SAP S/4HANA?
+There are 2 correct answer to this question.
+A. It is available only for new installations.
+B. It will NOT have any valuation view assigned to the ledger.
+C. It requires a non-leading ledger for parallel valuations.
+D. It utilizes separate amount columns in the same ledger.
+(Answer: B, D)
+106. For which account assignments can you perform realignment in the universal journal?
+There are 2 correct answer to this question.
+A. Customer group
+B. Functional area
+C. Profit center
+D. Sales region
+(Answer:A, D)
+
+
+
+107. You are converting your system to SAP S/4HANA. In your system you have:
+Three company codes assigned to a single controlling area
+Controlling area is assigned to fiscal year variant K4.
+Two company codes assigned to fiscal year variant K2
+One company code assigned to variant K3
+During conversion to SAP S/4HANA, what do you need to change?
+There are 1 correct answer to this question.
+A. Change all company codes and the controlling area to fiscal year variant K2.
+B. Change the controlling area to fiscal year variant K3.
+C. Change all company codes to fiscal year variant K2.
+D. Change all company codes to fiscal year variant K4
+(Answer:D)
+108. You post a customer invoice from Sales and Distribution in SAP S/4HANA, but the system terminates the transaction. With the error message ÅgMaximum number of these items In Fi reachedÅh.
+What do you need to configure in customizing in order to post this invoice successfully? There are 1 correct answer to this question.
+A. Data aging for accounting documents
+B. ACDOCA summarization
+C. SAP HANA database partitioning
+D. BSEG summarization
+(Answer:D)
+109. How can you set up multiple valuations for transfer pricing in your SAP S/4HANA system?
+There are 2 correct answer to this question.
+A. You can assign profit center, group, and legal valuations to the same ledger.
+B. You can assign more than 3 valuations to different ledgers, if you have enough ledgers defined.
+C. You can assign more than 3 valuations to the same ledger.
+D. You can assign each valuation to a separate ledger.
+(Answer:A, D)
+
+
+
+110. You compare the ACDOCA and BSEG tables and find that some Fl documents are NOT stored in the BSEG table. Which of the following financial accounting transactions creates entries only in the ACDOCA table?
+There are 1 correct answer to this question.
+A. Execute profit-center allocation
+B. Post vendor invoice
+C. Cash journal posting
+D. Depreciation run
+(Answer:A)
+111. The screenshot displays how the depreciation areas of a chart of depreciation post, to the G/L By looking at the screenshot what can you learn about the company code and ledger configuration?
+There are 1 correct answer to this question.
+A. There are no more than two ledger groups defined for the company code
+B. There are two ledgers posted during transaction processing.
+C. There are two currency types assigned to the company code.
+D. There is one extension ledger assigned to the leading ledger.
+(Answer:A)
+112. Your system currently does NOT use business partners (BP). The master data for suppliers and vendors and the defined account groups are NOT connected and are handled by separate departments.
+When preparing for integration, what do you have to create? There are 1 correct answer to this question.
+A. Create a BP type for each industry category in the customer/vendor accounts.
+B. Create a BP role for each customer and vendor account group.
+C. Create a BP category for each legal form maintained for customers/vendors.
+D. Create a BP grouping for each customer and vendor account group.
+(Answer: D)
+113. You want to post intercompany asset transfer only for IFRS. Which objects can you specify in the transfer posting to achieve this?
+There are 2 correct answer to this question.
+A. Transaction type
+B. Ledger group
+C. Accounting principle
+D. Depreciation area
+(Answer: B,C)
+
+
+114. What customizing option is available during the conversion project of an SAP ERP system with classic G/L to SAP S/4HANA?
+There are 1 correct answer to this question.
+A. Introduce document splitting
+B. Replace the accounts approach with the ledger approach.
+C. Add an extension ledger.
+D. Implement a new currency type.
+(Answer: D)
+115. Which of the following are phases in SAP Activate? There are 3 correct answer to this question.
+A. Blueprint
+B. Realize
+C. Deploy
+D. Test
+E. Explore
+(Answer: B,C,D)
+116. You perform planning in SAP Business Planning and Consolidation for SAP
+S/4HANA. Why do you retract the plan data from SAP Business Planning and
+Consolidation for SAP SI4HANA and return it to the standard planning tables?
+There are 2 correct answer to this question.
+A. To perform availability
+B. To prepare for financial consolidation
+C. To perform planning allocation
+D. To use standard SAP GUI plan/actual reporting
+(Answer:C,D)
+117. What does the Parallel Accounting Using G/L Accounts indicator in ledger configuration allow you to do?
+There are 1 correct answer to this question.
+A. Assign 2 ledgers to 1 company code
+B. Assign 2 or more ledgers to 1 accounting principle
+C. Assign 2 or more valuation areas to 1 company code
+D. Assign 2 or more accounting principles to 1 ledger
+(Answer: D)
+
+
+
+
+118. Your customerÅfs company code is assigned to a chart of depreciation with three depreciation areas that post in real time. Last year, your customer acquired an asset that was only capitalized In two of the depredation areas this year you post an integrated asset sale to a customer for this asset.
+How many documents are generated during the sale posting? There are 1 correct answer to this question.
+A.2
+B. 3
+C. 4
+D.5
+(Answer: B)
+119. What function of cash management allows you to create historical versions of cash flows?
+There are 1 correct answer to this question.
+A. Reconcile cash flows
+B. Cash pooling
+C. Release cash flows
+D. Snapshot
+(Answer: D)
+120. Which ledger-specific configuration can you maintain at company code level? There are 2 correct answer to this question.
+A. Field status variant
+B. Financial statement version
+C. Fiscal year variant
+D. Posting period variant
+(Answer: B, D)
+121. You are using SAP S/4HANA with account-based profitability analysis. For which objects can you activate derivation of profitability characteristics for G/L line items, without profitability segmentÅf?
+There are 1 correct answer to this question.
+A. Production orders
+B. Suppliers
+C. Materials
+D. Fixed assets
+(Answer:A)
+
+
+
+122. An asset is being acquired through integration with procurement. How is the asset acquisition value posted?
+There are 1 correct answer to this question.
+A. Non-valuated acquisition is posted at invoice receipt.
+B. Non-Valuated acquisition is posted at goods receipt.
+C. Valuated acquisition is posted at settlement.
+D. Valuated acquisition is posted at invoice receipt.
+(Answer:A)
+123. A customer wants to analyze a G/L account, which is presenting asset acquisition value, on an investment order. What do you maintain in the GIL account master record to achieve this?
+There are 2 correct answer to this question.
+A. Set the G/L account type to Non-operating Expenses or income
+B. Define the G/L account as an asset reconciliation account
+C. Enter value 90 in the cost element category field.
+D. Select the Record Account Assignment indicator.
+(Answer: B,D)
+124. Which modules need to be updated when you migrate to SAP S/4HANA? There are 2 correct answer to this question.
+A. Collections Management (FIN-FSCM-COL)
+B. Cash Management (FIN-FSCM-CLM)
+C. In-House Cash (FIN-FSCM-IHC)
+D. Credit Management (Fl-AR-CR)
+(Answer: B, D)
+125. Which modules read and write line items of the universal journal (ACDOCA)? There are 3 correct answer to this question.
+A. Material ledger with actual costing
+B. Costing-based profitability analysis
+C. Public sector management
+D. Cash management
+E. Account-based profitability analysis
+(Answer:C,D, E)
+
+
+
+126. What function is delivered with business function EA-FIN to support SAP S/4HANA?
+There are 1 correct answer to this question.
+A. Special valuations
+B. New Depreciation Engine
+C. Parallel ledgers
+D. Parallel depreciation areas
+(Answer: B)
+127. What are the improvements to new cash pooling? There are 2 correct answer to this question.
+A. You can set deficit and excess tolerances. If the balance is between the tolerances, no transfer is made.
+B. Different payment methods for payment requests can be specified in different paying company codes.
+C. The business user can define Ågexpected amountÅh and Ågminimal movement amountÅh for every bank account without configuration.
+D. The balance before concentration and the simulated balance after the concentration can be compared.
+(Answer:C,D)
+128. Your customer wants a new ERP solution and is looking at the SAP S/4HANA software. The customer has a skilled in-house IT team that they want to upskill and keep moving the forward. They want maintain a filly customizable solution without completely disrupting their current processes.
+Which SAP S/4HANA solution will you propose?
+Answer:
+On-premise
+129. Your customer has created a custom ABAP report in an SAP ERP system based on totals table GLTO. How is this totals table treated in SAP S/4HANA to safeguard custom ABAP reporting programs?
+Answer:
+The content of the table is deleted, and a compatibility view is generated.
+130. What are the benefits of the new depreciation posting run in Asset Accounting?
+Answer:
+The posting run can be performed even if there are errors on individual assets. You NO longer need to select reasons for the posting run.
+
+
+131. You perform an SAP S/4HANA migration. Some of the company codes were NOT used for years and the data posted to these company codes is no longer legally equied. How do you handle these company codes?
+Answer:
+Migrate all company codes of the client.
+132. In which sequence do you create the objects required for the SAP financial closing cockpit?
+Answer:
+1. Create template
+2. Create tasks
+3. Create task lists
+4. Release task lists
+133. What are your options for activating actual costing during the productive startup of the material ledger in s/4HANA?
+Answer:
+Actual costing is optional. If you do NOT activate it, you can activate it later.
+134. In a first step, you create an account with account type Ågsecondary cost elementÅh and cost element category Åg42Åh in controlling area A000 and company code
+1010.
+In a second step, you change this account to cost category Åg43Åh in company code 1750, which is assigned to the same controlling area.
+What is the effect in the system when you save this account?
+Answer:
+The cost element category in the account is also changed for company code 1010.
+135. Which functions are included in Basic Cash Management for SAP S/4HANA?
+Answer:
+Electronic bank statement processing
+Memo record management
+Workflow approval processing
+136. What must you create before you can record commitments in the universal journal?
+Answer:
+Extension ledger
+137. Cost of goods sold (COGS) split functionality is available in account-based CO-PA. Which settings are necessary?
+Answer:
+The corresponding cost elements must exist in the chart of accounts. Cost elements must be mapped to cost components
+
+
+
+138. Your customer uses the ledger approach to multiple valuation. During conversion to SAP S/4HANA, which configurations will be required?
+Answer:
+Convert accounts of parallel valuations to asset reconciliation accounts. Assign accounting principles to all real and derived depreciation areas.
+139. A customer wants to store alternative values of a foreign currency valuation in an extension ledger. What extension ledger type is needed for this purpose?
+Answer:
+Simulation
+140. You want to refine the settings for splitting variance categories into G/L accounts in an SAP S/4HANA 1809 system with account-based CO-PA. Which prerequisites must be met?
+Answer:
+You have executed the variance calculation in CO-PC.
+You have set up accounts for transaction key BSX and GBB in the MM account determination.
+141. On which levels can you assign semantic tags to a financial statement version in SAP Fiori?
+Answer:
+Financial statement item
+G/L account
+Functional area
+142. On what level can you assign a fiscal year variant to a company code?
+Answer:
+Ledger
+143. You extend the coding block in the universal journal with a custom field. Which components can use this new field without requiring further customization?
+Answer:
+General ledger accounting
+Costing-based CO-PA
+144. What can you assign in a depreciation area in SAP S/4HANA Finance asset accounting?
+Answer:
+An accounting principle
+
+
+145. You maintain a Launchpad for users to which role Z_MANACC is assigned. What do you need to do make an app available on the users Launchpad?
+Answer:
+Add the app to a catalog and a group that are assigned to role Z_MANACC
+146. There are 8 customer-specific charts of depreciation in the client that area assigned to 22 active company codes, as required Additionally, there are 7 reference and unused. How many you charts of depreciation do you migrate?
+Answer:
+8
+147. Your company code is configured with three depreciation areas that post in real time The company is configured to update company code and group currency types.
+Answer:
+1
+148. You create a G/L account and set the cost element category to 42 (assessment). In what table is the cost element category updated?
+Answer:
+CSKB: Cost Elements (Data Dependent on Controlling Area)
+149. Where can you find the automatic write-off program to close unpaid customer balances?
+Answer:
+Dispute Management
+150. Before conversion to SAP S/4HANA, which activities must be completed in the SAP ERP system for Asset Accounting?
+Answer:
+Close all fiscal years except the current one.
+Define depreciation areas for all currency types
+Activate enterprise extension EA-FIN
+151. For which parameters can you define the minimum life to maintain documents in financial accounting for data aging?
+Answer:
+Document type
+Account type
+152. What is an advantage of selecting the multi-tenant edition of SAP S/4HANA Cloud instead of an On-premise SAP S/4HANA solution?
+Answer:
+Cloud platform compatibility
+
+
+
+153. Which of the following is a prerequisite to activating takeover values in asset accounting?
+Answer:
+Takeover values are possible across all depreciation areas.
+154. You migrate a system from SAP ERP with classic G/L to SAP S/4HANA. Which activities must you perform in the productive SAP S/4HANA system before the software is installed?
+Answer:
+Run balance sheets and GIL account balances.
+Start the RAPERB2000 asset report.
+Post required documents in Fl and Co.
+155. Which of the following options in SAP S/4HANA 1809 is only possible in costing- based CO-PA and NOT in account-based CO-PA?
+Answer:
+Manual postings.
+156. Your customer upgraded a system to SAP S/4HANA for test reasons. During testing, you receive feedback from the business department that while opening and closing posting periods, the systems asks for a customizing request.
+What is the reason?
+Answer:
+The client role is set to test in the client maintenance.
+157. You are using SAP S/4HANA with account-based profitability analysis. For which objects can you activate derivation of profitability characteristics for G/L line items, without profitability segmentÅf?
+Answer:
+Production orders
+158. What setting must be identical between the company code and controlling area?
+Answer:
+The fiscal year variant key
+159. What must you do before a Go Live migration in the productive client can be set to Complete in customizing?
+Answer:
+Apply small-scale live postings of the day-to-day business to check the system Transfer application indexes using data aging
+
+
+
+160. What are some features of actual costing in SAP S/4HANA?
+Answer:
+Reduced number of steps in the calculation cockpit
+Simplified data structure with new table structure
+161. How can financial data be stored in the SAP S/4HANA system tables?
+Answer:
+There can be a line item in ACDOCA without a corresponding line item in BSEG. There can be a line item in ACDOCA without a corresponding line item in BKPF.
+162. You notice alpha-numeric document numbers in the Universal journal that do not have a separate document header stored in the BKPF table.
+Which activities may lead to alpha-numeric document numbers?
+Answer:
+Cross company code postings
+Settlement of investment orders
+163. In which of the possible scenarios can you indicate that an account is also a statistical cost elements?
+Answer:
+It is used as balance sheet account in fixed asset accounting.
+It is used as a work in process (WIP) inventory account in the material account assignment.
+164. What customizing option is available during the conversion project of an SAP ERP system with classic GIL to SAP S/4HANA?
+Answer:
+Implement a new currency type.
+165. In which cases can you use a transfer price for goods movement in parallel valuation?
+Answer:
+Between two profit centers
+Between two company codes
+166. What is the purpose of the retraction workbook?
+Answer:
+Retract planning data from BPC to ERP
+167. Which type of extension ledger do you set up to record incoming sales orders for account-based profitability analysis?
+Answer:
+Prediction and commitments
+
+
+168. Which type of extension ledger do you set up to record incoming sales orders for account-based profitability analysis?
+Answer:
+Prediction and commitments
+169. What credit management organizational element is required for calculating the credit limit, and enables you to carry out detailed checks at business
+Answer:
+Credit control area
+170. Which functions are included in Basic Cash Management for SAP S/4HANA?
+Answer:
+Electronic bank statement processing
+Workflow approval processing
+Memo record management
+171. You are performing a legacy asset data transfer in your SAP S/4HANA system.
+Your fiscal year end date is December 31.2017 and your asset transfer date is February
+26 2018.
+Which of the following values do you need to provide during legacy asset transfer?
+Answer:
+Accumulated depreciation values
+Acquisition and production costs
+Ordinary depreciation values
+172. Where can you view the cost of goods sold (COGS) postings per cost component in CO-PA?
+Answer:
+Standard COGS in account-based CO
+Standard COGS in cost-based CO-PA
+Actual COGS (based on material ledger) in cost-based CO-PA
+173. Which of the following is a prerequisite to activating takeover values in asset accounting?
+Answer:
+Takeover values are possible across all depreciation areas.
+174. What are the improvements to new cash pooling?
+Answer:
+The balance before concentration and the simulated balance after the concentration can be compared.
+The business user can define Ågexpected amountÅh and Ågminimal movement amountÅh for every bank account without configuration.
+
+
+175. What SAP Fiori app should be used to leverage the machine learning service for goods and invoice receipt reconciliation?
+Answer:
+Reconcile GR/IR Accounts
+176. You create a G/L account and set the cost element category to 42 (assessment). In what table is the cost element category updated?
+Answer:
+CSKB: Cost Elements (Data Dependent on Controlling Area)
+177. In your SAP S/4HANA system, you use the accounts approach for parallel valuation and report financial values for three separates accounting principles. You post an acquisition for an asset that is capitalized in a single accounting principle.
+If you use the application for posting integrated asset acquisitions, how many documents will the system post?
+Answer:
+1
+178. What are the parameters to define different technical clearing accounts for integrated acquisition in new asset counting?
+Answer:
+Chart of accounts
+Account determination
+179. Your system currently does NOT use business partners (BP). The master data for suppliers and vendors and the defined account groups are NOT connected and are handled by separate departments.
+When preparing for integration, what do you have to create?
+Answer:
+Create a BP grouping for each customer and vendor account group.
+180. Which object do you enter in controlling transactions to update a specific valuation in the universal journal?
+Answer:
+Ledger group
+181. What are the key components of the Intelligent Enterprise by SAP?
+Answer:
+Digital platform
+Intelligent suite
+Intelligent technologies
+
+
+
+182. What system configuration in your customers current SAP ERP system will have a major effect on the duration and complexity of a system conversion to SAP S/4HANA?
+Answer:
+The system uses classic asset accounting to manage fixed assets.
+183. What setting must be identical between the company code and controlling area?
+Answer:
+The fiscal year variant key
+184. Your customer is implementing a new installation of SAP S/4HANA. Which of the following technical components must be installed?
+Answer:
+SAP NetWeaver Application Server
+185. What are your options for activating actual costing during the productive startup of the material ledger in s/4HANA?
+Answer:
+Actual costing is optional. If you do NOT activate it, you can activate it later.
+186. Which information will be migrated automatically during an SAP S/4HANA finance migration?
+Answer:
+Authorizations
+Material ledger customizing
+Account balances
+187. You perform a direct activity allocation. Which database tables are updated?
+Answer:
+ACDOCA
+COBK
+188. You create a new G/L account. Which G/L account type can you assign?
+Answer:
+Primary Costs or Revenue
+Secondary Costs
+
+
+
+189. You are performing a system conversion for a customer that uses classic general ledger with the accounts approach.
+What must you configure in SAP S/4HANA for local and international accounting standards in order to migrate the account values?
+Answer:
+Ledger groups
+Accounting principles
+Valuation areas (Fl)
+190. You need to transfer multiple standard cost prices to CO-PA in an SAP S/4HANA system. What do you need to set up?
+Answer:
+The new refinement for cost of goods sold postings in account-based CO-PA
+191. How many digits for the amount field on the financial document line item level are supported in the universal journal?
+Answer:
+23
+192. You perform planning in SAP Business Planning and Consolidation for SAP
+S/4HANA. Why do you retract the plan data from SAP Business Planning and
+Consolidation for SAP SI4HANA and return it to the standard planning tables?
+Answer:
+To use standard SAP GUI plan/actual reporting
+To perform planning allocation
+193. You define an additional extension ledger. What type of ledger can you assign as underlying ledger?
+Answer:
+Standard ledger
+194. In which of the following CO transactions is it NOT possible to enter a ledger goup?
+Answer:
+Activity Allocation (KB21N)
+195. In which of the following CO transactions is it NOT possible to enter a ledger goup?
+Answer:
+Activity Allocation (KB21N)
+
+
+
+196. If a customer decides to deploy SAP S/4HANA Cloud instead of SAP S/4HANA on premise, what distinct benefits will the customer gain?
+Answer:
+Automatic updates every 3 months
+Faster initial implementation
+Seamless adoption of the existing processes
+197. What must always be activated after the installation of SAP S/4HANA?
+Answer:
+Material ledger
+198. You convert a system from SAP ERP with classic G/L to SAP S/4HANA. Which activities must you perform in the productive SAP S/4HANA system before the software is installed?
+Answer:
+Run balance sheet and G/L account balances reporting.
+Start the RAPE RB2000 asset report.
+199. You are migrating from classic Asset Accounting to new Asset Accounting as part of your SAP S/4HANA migration. Yon have created an additional depreciation area for group currency under the chart of depredation.
+What are the critical steps for fixed assets?
+Answer:
+Update G/L accounts for the new depreciation area for the chart of depreciation.
+Manually recalculate depreciation for the new depreciation area.
+Activate the new depreciation areas for asset classes under the chart of depreciation.
+200. Which of the following are key benefits of SAP S/4HANA?
+Answer:
+Reduced footprint
+Choice of deployment
+201. For which Cases Can you Use SAP Product Lifecycle Costing?
+Answer:
+Quotation costing
+Preliminary cost estimates
+202. You want to create a balance sheet and profit & loss statement on segment level. Which steps do you need to take in the system?
+Answer:
+Define a clearing account
+Set the zero-balance indicator
+
+
+
+
+
+203.You want to configure an extension ledger. Which steps do you need to take?
+Answer:
+Specify currency types for the extension ledger.
+Select an Underlying ledger for the extension ledger.
+
+204.What models are required to support advanced planning for embedded BPC?
+Answer:
+Exchange Rate model 
+Source model
+205. Which modules remain unchanged after the migration to SAP S/4HANA?
+Answer:
+Costing-based CO-PA
+Classic profit center accounting
+Special purpose ledger
+206.If you use the ledger approach, which customization settings must you apply for
+new Asset Account?
+Answer:
+Define a technical clearing account for integrated asset acquisitions.
+Assign an accounting principle to every depreciation area
+
+207.Which data can be transferred to both account-based CO-PA and costing-based
+CO-PA?
+Answer:
+Statistical sales conditions
+Split of cost of goods sold according to the cost component split
+
